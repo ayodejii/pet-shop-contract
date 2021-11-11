@@ -8,7 +8,7 @@ contract Adoption{
         
         require(petId > 0 && petId < 15);
 
-        adopters[petId] = msg.sender;
+        adopters[petId] = msg.sender; //adopter of pet {petId} is the caller of this method
 
         return petId;
     }
